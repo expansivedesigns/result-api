@@ -7,7 +7,7 @@ const cors = require('cors')
 
 const connectDB = async () => {
     try{
-        await mongoose.connect(process.env.CONNECTIONSTRING, {         
+        await mongoose.connect(process.env.MONGODB_URI, {         
         //await mongoose.connect(`mongodb+srv://DB_USER:DB_PASS@cluster0.fv0mg.mongodb.net/mytable?retryWrites=true&w=majority`, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
